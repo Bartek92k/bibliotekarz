@@ -92,7 +92,8 @@ public class Studenci {
             preparedStmt.setString(1, telefon1);
             //preparedStmt.execute();
             //Statement stmt = conn.createStatement();
-            ResultSet rs = preparedStmt.execute();
+            preparedStmt.execute();
+            ResultSet rs ;
             System.out.println(query);
             while (rs.next()) {
                 int id_czyt=rs.getInt(0);
